@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/payment.css' %}">
+    <link rel="stylesheet" href="{% static 'css/interface.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <script>
+        function dropdown(){
+            if(document.getElementById('drop').style.display=="block"){
+                document.getElementById('drop').style.display="none"
+            }
+            else{
+                document.getElementById('drop').style.display="block"
+            }
+        }
+    </script>
+    <title>Index</title>
+</head>
+<body onload="details()">
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">Assignment</div>
+            </div>
+            <div class="nav-right">
+                <div class="items"><a href="{% url 'signin' %}">SignIn</a></div>
+                <div class="items"><a href="{% url 'signup' %}">SignUp</a></div>
+            </div>
+        </div>
+    </nav>
+    <div class="dropdown-content" id="drop">
+        <a href="{% url 'profile' %}">Profile</a>        
+        <a href="{% url 'recharge' %}">Recharge</a>
+        <a href="{% url 'debits' %}">Debits</a>
+        <a href="{% url 'credits' %}">Credits</a>
+        <a href="{% url 'transactions' %}">All Transactions</a>
+        <a href="{% url 'logout' %}">Logout</a>
+      </div>
+</body>
+</html>
