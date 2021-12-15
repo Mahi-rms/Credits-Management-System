@@ -26,8 +26,6 @@ def load_raz(request):
 
 @csrf_exempt
 def razcon(request):
-    if(not request.user.is_authenticated):
-        return redirect('/')
     if(request.method=='POST'):
         DATA = {
         "amount": int(request.POST['amount'])*100,
