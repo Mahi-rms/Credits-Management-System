@@ -14,7 +14,8 @@ RAZORPAY_KEY=''
 ]
 
 3. Enable less-secure app access in Gmail Account settings.
-4. Run the following commands:
+4. You can edit the constant 'EXPIRY' in settings
+5. Run the following commands:
 i) python manage.py makemigrations
 ii) python manage.py migrate
 iii) python manage.py createsuperuser (if you want to see the Admin Panel)

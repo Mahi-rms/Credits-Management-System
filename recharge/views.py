@@ -51,7 +51,7 @@ def razcon(request):
         credit.amount=request.POST['amount']
         credit.transaction_type='credit'
         credit.paid_at=datetime.datetime.now()
-        credit.valid_upto=datetime.datetime.now() + datetime.timedelta(30)
+        credit.valid_upto=datetime.datetime.now() + datetime.timedelta(settings.EXPIRY)
         credit.save()
         return redirect('success')
     else:
