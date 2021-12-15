@@ -1,4 +1,4 @@
-# mahesh-test
+# CREDITS MANAGEMENT SYSTEM
 
 To Run the Project follow the steps:
 1. Install the modules updated in "requirements.txt"
