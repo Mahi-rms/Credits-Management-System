@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 import environ
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -150,3 +151,5 @@ RAZORPAY_KEY=env('RAZORPAY_KEY')
 
 #Expire after n days
 EXPIRY=30
+
+django_heroku.settings(locals())
