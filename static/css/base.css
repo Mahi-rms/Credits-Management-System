@@ -27,7 +27,7 @@ nav{
     margin-left: 20px;
 }
 .items{
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .dropbtn {
     background-color: #04AA6D;
@@ -44,6 +44,8 @@ nav{
   .dropdown {
     position: relative;
     display: inline-block;
+    cursor: pointer;
+    user-select: none;
   }
   
   .dropdown-content {
