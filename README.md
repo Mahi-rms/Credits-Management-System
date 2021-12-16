@@ -1,15 +1,19 @@
 # CREDITS MANAGEMENT SYSTEM
 Deployment Link: https://credits-management-system.herokuapp.com/
+
 To Run the Project follow the steps:
 1. Install the modules updated in "requirements.txt"
 2. Create a ".env" file and fill the following details:
 [
+
 SECRET_KEY=''
 
 EMAIL_ADDRESS=''
+
 EMAIL_PASSWORD=''
 
 RAZORPAY_ID=''
+
 RAZORPAY_KEY=''
 ]
 
